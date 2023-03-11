@@ -10,7 +10,7 @@ number = int(input('введите число ->'))
 if number%6==0 and number>6:
    sum = int(number/3)
    guis=int(sum/2)
-   girl = int(guiss*4)
+   girl = int(guis*4)
    print(number,'сделали->',guis,girl,guis)
 elif number < 6:
    print('вы ввели маленькое число,введите число больше 6')

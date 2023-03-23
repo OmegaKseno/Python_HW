@@ -13,7 +13,6 @@ def Exponentiation (numA,numB):
 
     if numB==1:
        return numA
-    print(numA)
     return  numA*Exponentiation (numA,numB-1)
   
 result = Exponentiation (numberA,numberB)

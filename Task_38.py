@@ -36,7 +36,7 @@ def add_item(filename, lastname = '', firstname = '', secondname = '', phone = '
 def show_all_items(filename):
     data_array = read_file(filename)    
     for i in range(1,len(data_array)):
-        print("ID:",data_array[i][0]," Фамилия:",data_array[i][1]," Имя:",data_array[i][2]," Отчество:",data_array[i][3]," Телефон:",data_array[i][4])
+        print("ID:",data_array[i][0]," Фамилия:",data_array[i][1],"  Имя:",data_array[i][2],"  Отчество:",data_array[i][3],"  Телефон:",data_array[i][4])
 
 def menu():
     print('Добро пожаловать в телефонный справочник!')
@@ -54,7 +54,7 @@ def menu():
         delete_items(filename)
     elif user_operation == 3:
         change_items(filename)    
-
+#############################  ИЗМЕНЕНЕ
 def change_items(filename):
     show_all_items(filename)
     data_array = read_file(filename)
@@ -69,7 +69,7 @@ def change_items(filename):
     write_file(filename, data_array)
            
           
-   
+############################# УДАЛЕНИЕ   
 
 def delete_items(filename):
     show_all_items(filename)
